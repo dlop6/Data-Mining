@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+.venv
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb_checkpoints/
+
+# Data (NO versionar datos pesados)
+data/raw/excel/*.xlsx
+data/raw/csv/*.csv
+data/processed/*.csv
+data/interim/*.csv
+*.parquet
+*.h5
+*.hdf5
+
+# Output (versionar solo código, no resultados generados)
+output/figures/*.png
+output/figures/*.jpg
+output/figures/*.svg
+output/tables/*.csv
+output/tables/*.xlsx
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+
+# Temporal
+tmp/
+temp/
+*.tmp
