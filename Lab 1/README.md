@@ -10,13 +10,20 @@
 
 ## Descripción del Proyecto
 
-Análisis exploratorio de datos de estadísticas vitales de Guatemala (2009-2022) proporcionados por el Instituto Nacional de Estadística (INE). El proyecto incluye limpieza, normalización y análisis de 5 tipos de registros:
+Análisis exploratorio de datos de estadísticas vitales de Guatemala (2009-2022) proporcionados por el Instituto Nacional de Estadística (INE). 
 
-- Defunciones
-- Defunciones fetales
-- Divorcios
-- Matrimonios
-- Nacimientos
+**Dataset consolidado:**
+- 📊 Total registros: 7,295,381
+- 📋 Total columnas: 95
+- 📁 Tamaño master_dataset.csv: 1.7 GB
+- ⏱️ Años procesados: 2009-2022 (14 años)
+
+**Tipos de datos (5):**
+- 🔹 Nacimientos (~5.1M)
+- 🔹 Defunciones (~1M)
+- 🔹 Matrimonios (~997K)
+- 🔹 Divorcios (~78K)
+- 🔹 Defunciones Fetales (~38K)
 
 ---
 
@@ -119,6 +126,35 @@ Los resultados generados se encuentran en:
 - `output/figures/` - Gráficas en formato PNG/SVG
 - `output/tables/` - Tablas resumen en CSV
 - `output/reports/` - Reportes en Markdown
+
+---
+
+## 💾 Gestión de Archivos Grandes en Git
+
+**IMPORTANTE:** Los archivos grandes NO están incluidos en el repositorio.
+
+### Archivos ignorados (especificados en `.gitignore`):
+
+| Ruta | Tamaño | Razón |
+|------|--------|-------|
+| `data/raw/csv/*.csv` | ~4-5 GB | Datos crudos del INE |
+| `data/processed/master_dataset.csv` | 1.7 GB | Dataset consolidado |
+| `output/figures/*.png` | ~100 MB | Gráficas generadas |
+
+**Resultado:** Repositorio en GitHub = ~200 KB (vs 6+ GB localmente)
+
+### Cómo regenerar datos localmente
+
+```bash
+# 1. Descargar CSVs desde INE (manual)
+# Colocar en: data/raw/csv/
+
+# 2. Ejecutar notebook
+jupyter notebook notebooks/01_exploracion_inicial.ipynb
+
+# Genera automáticamente:
+# - data/processed/master_dataset.csv
+```
 
 ---
 

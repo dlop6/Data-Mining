@@ -1,3 +1,62 @@
-data/sav/_cache_downloads/
+# ===============================
+# Data Mining - Lab 1 - Archivos Grandes
+# ===============================
+
+# Datos crudos (archivos .csv originales del INE - 4-5 GB)
+Lab\ 1/data/raw/csv/*.csv
+
+# Datos procesados (master_dataset.csv consolidado - 1.7 GB)
+Lab\ 1/data/processed/master_dataset.csv
+
+# Datos intermedios
+Lab\ 1/data/interim/*.csv
+Lab\ 1/data/interim/*.parquet
+
+# Archivos SAV originales (SPSS - 2-3 GB)
+Lab\ 1/data/sav/**/*.sav
+Lab\ 1/data/sav/**/*.xlsx
+Lab\ 1/data/sav/_cache_downloads/
+
+# Outputs generados
+Lab\ 1/output/figures/*.png
+Lab\ 1/output/figures/*.jpg
+Lab\ 1/output/figures/*.svg
+Lab\ 1/output/tables/*.csv
+Lab\ 1/output/tables/*.xlsx
+
+# ===============================
+# Python Standard
+# ===============================
+
+# Jupyter
+Lab\ 1/notebooks/.ipynb_checkpoints/
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+Lab\ 1/.venv/
+Lab\ 1/venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Temporal
 temp/*
 TAREAS.md

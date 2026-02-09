@@ -1,0 +1,5 @@
+{
+    "typeCheckingMode": "basic",
+    "reportUndefinedVariable": false,
+    "pythonVersion": "3.13"
+}
