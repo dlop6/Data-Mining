@@ -79,7 +79,6 @@ Información socioeconómica de padres/cónyuges.
 | `eschom` | Escolaridad hombre (nivel educativo del hombre) |
 | `ocupam` | Ocupación madre |
 | `ocupap` | Ocupación padre |
-| `ocupap` | Ocupación padre |
 | `ocuhom` | Ocupación hombre |
 | `ocumuj` | Ocupación mujer |
 | `ocudif` | Código/indicador de ocupación en registros de defunción |
@@ -177,5 +176,7 @@ Campos de control/clasificación del sistema de registros.
 
 - **Cobertura temporal:** 2009-2022
 - **Registros totales:** 7,295,381 (dataset consolidado)
+- **Valores de `tipo` observados en el dataset maestro:** `nacimientos`, `defunciones`, `matrimonios`, `divorcios`, `defunciones_fetales`.
+- **Limitación de fuente en snapshot local:** los archivos `2023_*.csv` en `data/raw/csv/` son tablas resumen y los `2024_*.csv` están vacíos; por eso el análisis formal se mantiene en 2009-2022.
 - **Observación:** Muchas columnas son específicas a un tipo de evento (por ejemplo, `libras`, `semges` aplican sobre nacimientos) por lo que aparecerán con alto % de NaN en muestras de un solo tipo.
 
