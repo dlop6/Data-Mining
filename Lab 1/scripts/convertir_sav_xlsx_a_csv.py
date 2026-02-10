@@ -21,10 +21,10 @@ def convert_sav_to_csv(sav_path: Path, csv_path: Path, verbose: bool = False) ->
         assert isinstance(df, pd.DataFrame)
         df.to_csv(csv_path, index=False, encoding="utf-8")
         if verbose:
-            print(f"✓ Convertido: {sav_path.name} → {csv_path.name}")
+            print(f"  Convertido: {sav_path.name} → {csv_path.name}")
         return True
     except Exception as e:
-        print(f"✗ Error al convertir {sav_path.name}: {e}")
+        print(f"  Error al convertir {sav_path.name}: {e}")
         return False
 
 
@@ -34,10 +34,10 @@ def convert_xlsx_to_csv(xlsx_path: Path, csv_path: Path, verbose: bool = False) 
         df = pd.read_excel(xlsx_path, engine="openpyxl")
         df.to_csv(csv_path, index=False, encoding="utf-8")
         if verbose:
-            print(f"✓ Convertido: {xlsx_path.name} → {csv_path.name}")
+            print(f"  Convertido: {xlsx_path.name} → {csv_path.name}")
         return True
     except Exception as e:
-        print(f"✗ Error al convertir {xlsx_path.name}: {e}")
+        print(f"  Error al convertir {xlsx_path.name}: {e}")
         return False
 
 
@@ -128,7 +128,7 @@ Ejemplo:
     print(f"\n{'='*60}")
     if not args.dry_run:
         csv_files = list(CSV_OUTPUT_DIR.glob("*.csv"))
-        print(f"✓ PROCESO COMPLETADO")
+        print(f"  PROCESO COMPLETADO")
         print(f"Archivos CSV generados: {len(csv_files)}")
         print(f"Ubicación: {CSV_OUTPUT_DIR}")
     else:

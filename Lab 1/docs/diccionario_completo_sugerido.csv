@@ -1,0 +1,96 @@
+columna,dtype,pct_null,n_unique,ejemplos,present_defunciones,sugerencia
+getdif,float64,100.0,0,[],0.0,
+areag,float64,100.0,0,[],0.0,
+ocudif,float64,100.0,0,[],0.0,
+nacmuj,float64,100.0,0,[],0.0,
+nachom,float64,100.0,0,[],0.0,
+ppermuj,float64,100.0,0,[],0.0,
+eschom,float64,100.0,0,[],0.0,
+pperhom,float64,100.0,0,[],0.0,
+edadmuj,float64,100.0,0,[],0.0,Edad mujer (matrimonios)
+ocupam,float64,100.0,0,[],0.0,Ocupación madre
+edadhom,float64,100.0,0,[],0.0,Edad hombre (matrimonios)
+naciom,float64,100.0,0,[],0.0,
+gretnm,float64,100.0,0,[],0.0,
+tohivi,float64,100.0,0,[],0.0,
+tohinm,float64,100.0,0,[],0.0,
+tohite,float64,100.0,0,[],0.0,
+sitioocu,float64,100.0,0,[],0.0,Sitio de ocurrencia del evento
+asisrec,float64,100.0,0,[],0.0,
+ciuomad,float64,100.0,0,[],0.0,
+escolam,float64,100.0,0,[],0.0,Escolaridad madre
+nacionm,float64,100.0,0,[],0.0,Nacionalidad madre
+escivm,float64,100.0,0,[],0.0,
+pueblopm,float64,100.0,0,[],0.0,
+muprem,float64,100.0,0,[],0.0,
+deprem,float64,100.0,0,[],0.0,Departamento residencia madre
+paisrem,float64,100.0,0,[],0.0,País residencia madre
+edadm,float64,100.0,0,[],0.0,Edad madre
+semges,float64,100.0,0,[],0.0,Semanas de gestación (nacimientos)
+viapar,float64,100.0,0,[],0.0,
+clapar,float64,100.0,0,[],0.0,
+tipar,float64,100.0,0,[],0.0,
+muprep,float64,100.0,0,[],0.0,
+getmuj,float64,100.0,0,[],0.0,
+ocuhom,float64,100.0,0,[],0.0,
+ocumuj,float64,100.0,0,[],0.0,
+puehom,float64,100.0,0,[],0.0,
+puemuj,float64,100.0,0,[],0.0,
+clauni,float64,100.0,0,[],0.0,
+nunuho,float64,100.0,0,[],0.0,
+nunumu,float64,100.0,0,[],0.0,
+areagocu,float64,100.0,0,[],0.0,
+tipoins,float64,100.0,0,[],0.0,
+libras,float64,100.0,0,[],0.0,Peso en libras (nacimientos)
+onzas,float64,100.0,0,[],0.0,Peso en onzas (nacimientos)
+edadp,float64,100.0,0,[],0.0,Edad persona (nacimientos)
+paisrep,float64,100.0,0,[],0.0,
+deprep,float64,100.0,0,[],0.0,
+paisnacm,float64,100.0,0,[],0.0,País nacionalidad madre
+pueblopp,float64,100.0,0,[],0.0,
+escivp,float64,100.0,0,[],0.0,
+paisnacp,float64,100.0,0,[],0.0,
+depnap,float64,100.0,0,[],0.0,
+munpnap,float64,100.0,0,[],0.0,
+escolap,float64,100.0,0,[],0.0,
+ocupap,float64,100.0,0,[],0.0,Ocupación padre
+mupnap,float64,100.0,0,[],0.0,
+depnam,float64,100.0,0,[],0.0,Departamento nacionalidad madre
+mupnam,float64,100.0,0,[],0.0,
+gretnp,float64,100.0,0,[],0.0,
+ciuohom,float64,100.0,0,[],0.0,
+escmuj,float64,100.0,0,[],0.0,
+ciuomuj,float64,100.0,0,[],0.0,
+gethom,float64,100.0,0,[],0.0,
+grupetma,float64,100.0,0,[],0.0,
+naciop,float64,100.0,0,[],0.0,
+munnam,float64,100.0,0,[],0.0,
+cerdef,float64,0.0,4,"[1.0, 9.0, 2.0, 3.0]",100.0,Certificado de defunción
+año,int64,0.0,1,[2009],100.0,Año del evento (2009-2022)
+asist,float64,0.0,6,"[1.0, 5.0, 2.0, 3.0, 4.0]",100.0,Asistencia médica
+ocur,float64,0.0,8,"[1.0, 4.0, 6.0, 3.0, 8.0]",100.0,
+mredif,float64,0.0,310,"[101.0, 110.0, 203.0, 205.0, 402.0]",100.0,
+mnadif,int64,0.0,325,"[101, 9999, 110, 201, 402]",100.0,
+dnadif,float64,0.0,24,"[1.0, 99.0, 2.0, 4.0, 7.0]",100.0,
+pnadif,float64,0.0,9,"[320.0, 9999.0, 222.0, 484.0, 840.0]",100.0,
+nacdif,float64,0.0,9,"[320.0, 9999.0, 222.0, 484.0, 840.0]",100.0,
+caudef,object,0.0,770,"['I776', 'U071', 'R99X', 'P220', 'U072']",100.0,Causa de defunción (CIE-10)
+predif,float64,0.0,6,"[320.0, 9999.0, 840.0, 484.0, 340.0]",100.0,
+dredif,float64,0.0,24,"[1.0, 2.0, 4.0, 5.0, 7.0]",100.0,
+escodif,float64,0.0,6,"[1.0, 9.0, 2.0, 3.0, 4.0]",100.0,
+sexo,float64,0.0,2,"[1.0, 2.0]",100.0,"Sexo: 1=Hombre, 2=Mujer"
+mupocu,int64,0.0,327,"[101, 110, 201, 402, 409]",100.0,Código municipio de ocurrencia
+depocu,float64,0.0,22,"[1.0, 2.0, 4.0, 5.0, 7.0]",100.0,Código departamento de ocurrencia
+perdif,float64,0.0,3,"[1.0, 2.0, 3.0]",100.0,
+edadif,float64,0.0,22,"[0.0, 1.0, 2.0, 3.0, 4.0]",100.0,Edad (infantil/defunciones) en años
+añoocu,float64,0.0,1,[2020.0],100.0,Año de ocurrencia
+mesocu,float64,0.0,12,"[4.0, 7.0, 2.0, 1.0, 6.0]",100.0,Mes de ocurrencia
+diaocu,float64,0.0,31,"[18.0, 7.0, 6.0, 26.0, 25.0]",100.0,Día de ocurrencia
+mesreg,float64,0.0,12,"[4.0, 7.0, 2.0, 1.0, 6.0]",100.0,Mes de registro (1-12)
+mupreg,float64,0.0,335,"[101.0, 110.0, 201.0, 402.0, 409.0]",100.0,Código municipio de registro
+depreg,float64,0.0,22,"[1.0, 2.0, 4.0, 5.0, 7.0]",100.0,Código departamento de registro
+añoreg,float64,0.0,2,"[2020.0, 2021.0]",100.0,Año de registro
+ciuodif,int64,0.0,32,"[97, 99, 92, 93, 52]",100.0,
+puedif,float64,0.0,6,"[4.0, 5.0, 9.0, 1.0, 2.0]",100.0,
+ecidif,float64,0.0,3,"[1.0, 9.0, 2.0]",100.0,
+tipo,object,0.0,1,['defunciones'],,Tipo de evento: nacimientos/defunciones/matrimonios/divorcios/defunciones_fetales

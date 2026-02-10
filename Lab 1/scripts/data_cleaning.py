@@ -58,7 +58,7 @@ def cargar_tipo_normalizado(
             metadata[año] = len(cols_originales)
             
             if verbose:
-                print(f"✓ {año}: {df.shape[0]:,} filas, {df.shape[1]} columnas")
+                print(f"  {año}: {df.shape[0]:,} filas, {df.shape[1]} columnas")
         
         except Exception as e:
             if verbose:
@@ -269,5 +269,5 @@ def guardar_dataset(df: pd.DataFrame, ruta_salida: Path, nombre: str = "") -> No
     df.to_csv(ruta_salida, index=False)
     tamaño_mb = ruta_salida.stat().st_size / (1024**2)
     
-    print(f"\n✓ {nombre} guardado en: {ruta_salida}")
+    print(f"\n  {nombre} guardado en: {ruta_salida}")
     print(f"  Tamaño: {tamaño_mb:.2f} MB")
