@@ -50,3 +50,5 @@ temp/
 *.tmp
 PROMPT_CONTINUACION_FASE2.md
 CHECKLIST_DIEGO_PRIVADA.md
+docs/rubrica_responsabilidades_diego.md
+scripts/auditar_fuente_ine.py

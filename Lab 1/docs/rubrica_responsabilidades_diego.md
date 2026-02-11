@@ -86,3 +86,28 @@ Las tareas de Q3-Q5 y clustering corresponden a Roberto y deben integrarse al en
 2. Implementar Q2 completo (tabla, visualizacion, interpretacion, top 3 mejores/peores).
 3. Redactar en notebook 03: situacion problematica, problema cientifico, objetivos, hallazgos y conclusion Q1-Q2.
 4. Transferir esos resultados al Google Docs y PDF final.
+
+---
+
+## Actualizacion de Evidencia (Fuente Oficial y Q1 Preliminar)
+
+**Fecha de actualizacion:** 2026-02-10
+
+### Evidencia nueva generada
+1. Auditoria de fuente oficial (`.sav`) 2009-2022:
+   - `Lab 1/output/tables/auditoria_fuente_ine_2009_2022.csv`
+   - `Lab 1/output/tables/auditoria_fuente_resumen_ine_2009_2022.csv`
+2. Regeneracion de datasets clean:
+   - `Lab 1/data/processed/nacimientos_clean_2009_2022.csv`
+   - `Lab 1/data/processed/defunciones_clean_2009_2022.csv`
+   - `Lab 1/data/processed/q1q2_control_calidad_2009_2022.csv`
+3. Resultado Q1 marcado metodologicamente:
+   - `Lab 1/output/tables/q1_mortalidad_infantil_anual_2009_2022.csv` (estado: `preliminar_no_concluyente`)
+   - `Lab 1/output/figures/q1_tendencia_mortalidad_infantil_2009_2022_preliminar.png`
+4. Documentacion en notebook:
+   - `Lab 1/notebooks/03_hipotesis.ipynb` (bloque de limitaciones de fuente oficial y estado preliminar de Q1)
+
+### Lectura metodologica actual (alcance Diego)
+1. Q1: implementado tecnicamente, pero **no concluyente** por incidencia documentada de calidad de fuente oficial.
+2. Q2: pendiente de implementacion; debe heredar el mismo disclaimer de fuente para evitar inferencias fuertes.
+3. Descripcion/limpieza de datos: sube a **cumplido con limitaciones explicitadas** al existir evidencia de auditoria reproducible.
