@@ -28,21 +28,20 @@ Lab 1/
 ├── requirements.txt
 ├── docs/
 ├── data/
-│   ├── raw/csv/
-│   ├── processed/
-│   ├── interim/
-│   └── sav/
+│   ├── csv/                               # Datos crudos (2009-2022)
+│   ├── processed/                         # Datasets limpios
+│   └── sav/                               # Archivos SPSS originales
 ├── notebooks/
-│   ├── 01_exploracion_inicial.ipynb
-│   ├── 02_analisis_descriptivo.ipynb
-│   └── 03_hipotesis.ipynb
+│   ├── 01_exploracion_inicial.ipynb       # Consolidación y master_dataset
+│   ├── 02_analisis_descriptivo.ipynb      # Estadística descriptiva
+│   └── 03_hipotesis.ipynb                 # Q1-Q5 + clustering
 ├── scripts/
-│   ├── data_cleaning.py
-│   └── convertir_sav_xlsx_a_csv.py
+│   ├── build_q1_q2_clean.py              # Pipeline de limpieza reproducible
+│   ├── data_cleaning.py                   # Funciones auxiliares de limpieza
+│   └── convertir_sav_xlsx_a_csv.py       # Conversión SAV → CSV
 └── output/
-    ├── figures/
-    ├── tables/
-    └── reports/
+    ├── figures/                           # 60+ visualizaciones (PNG)
+    └── tables/                            # 30 tablas de resultados (CSV)
 ```
 
 ## Flujo de Trabajo
@@ -68,9 +67,20 @@ pip install -r "Lab 1/requirements.txt"
 ```
 
 ## Artefactos Generados
-- Figuras: `Lab 1/output/figures/`
-- Tablas: `Lab 1/output/tables/`
-- Dataset consolidado: `Lab 1/data/processed/master_dataset.csv` (local, no versionado)
+- **Informe formal:** `Lab 1/docs/informe_analisis_exploratorio.md`
+- **Figuras:** `Lab 1/output/figures/` (60+ gráficos: heatmaps, histogramas, Q-Q, barras, dispersión)
+- **Tablas:** `Lab 1/output/tables/` (30 CSVs: estadísticas descriptivas, normalidad, Q1-Q5)
+- **Dataset consolidado:** `Lab 1/data/processed/master_dataset.csv` (local, no versionado)
+- **Datasets clean:** `Lab 1/data/processed/nacimientos_clean_2009_2022.csv`, `defunciones_clean_2009_2022.csv`
+
+## Preguntas de Investigación
+| # | Pregunta | Responsable | Resultado |
+|---|---|---|---|
+| Q1 | Tendencia de mortalidad infantil 2009-2022 | Diego | Tendencia creciente (R²=0.723), hipótesis de mejora **rechazada** |
+| Q2 | Disparidades geográficas entre departamentos | Diego | Brecha 10.4× entre Guatemala y Zacapa, **confirmada** |
+| Q3 | Patrones estacionales intraanuales | Roberto | Julio es mes más crítico (1.07×1,000), **confirmada** |
+| Q4 | Variación por variables demográficas | Roberto | Sobremortalidad masculina +23.4%, efecto urbano 5.7×, **confirmada** |
+| Q5 | Clustering departamental | Roberto | k=2, silueta=0.469: "Baja tasa estable" (18) vs "Intermedia con oscilación" (4) |
 
 ## Colaboracion (Resumen)
 - **Diego:** Fase 1 + Preguntas Q1-Q2

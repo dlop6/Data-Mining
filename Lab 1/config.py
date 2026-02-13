@@ -10,9 +10,29 @@ PROJECT_ROOT = Path(__file__).parent
 
 # Rutas de datos
 DATA_DIR = PROJECT_ROOT / "data"
-DATA_RAW_DIR = DATA_DIR / "raw"
-DATA_RAW_CSV_DIR = DATA_RAW_DIR / "csv"
-DATA_RAW_EXCEL_DIR = DATA_RAW_DIR / "excel"
+
+# Ajustar rutas crudas según la estructura real disponible localmente
+_default_raw_dir = DATA_DIR / "raw"
+DATA_RAW_DIR = _default_raw_dir if _default_raw_dir.exists() else DATA_DIR
+
+_default_csv_dir = DATA_RAW_DIR / "csv"
+_legacy_csv_dir = DATA_DIR / "csv"
+if _default_csv_dir.exists():
+    DATA_RAW_CSV_DIR = _default_csv_dir
+elif _legacy_csv_dir.exists():
+    DATA_RAW_CSV_DIR = _legacy_csv_dir
+else:
+    DATA_RAW_CSV_DIR = _default_csv_dir
+
+_default_excel_dir = DATA_RAW_DIR / "excel"
+_legacy_excel_dir = DATA_DIR / "excel"
+if _default_excel_dir.exists():
+    DATA_RAW_EXCEL_DIR = _default_excel_dir
+elif _legacy_excel_dir.exists():
+    DATA_RAW_EXCEL_DIR = _legacy_excel_dir
+else:
+    DATA_RAW_EXCEL_DIR = _default_excel_dir
+
 DATA_PROCESSED_DIR = DATA_DIR / "processed"
 DATA_INTERIM_DIR = DATA_DIR / "interim"
 
